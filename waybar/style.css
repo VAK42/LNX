@@ -1,0 +1,56 @@
+@import "mocha.css";
+
+* {
+    font-family: JetBrainsMono Nerd, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    padding: 0;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid @teal;
+    border-radius: 4px;
+}
+
+button {
+    color: @maroon;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+#custom-msi {
+    color: @text;
+}
+
+#clock {
+    color: @teal;
+}
+
+#temperature {
+    color: @blue;
+}
+
+#cpu {
+    color: @sky;
+}
+
+#memory {
+    color: @lavender;
+}
+
+#disk {
+    color: @sapphire;
+}
+
+#network {
+    color: @mauve;
+}
+
+#battery { 
+    color: @green;
+}

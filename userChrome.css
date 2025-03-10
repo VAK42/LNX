@@ -1,0 +1,5 @@
+#titlebar, window, #main-window, #toolbar-menubar, #TabsToolbar, #PersonalToolbar, #navigator-toolbox {
+    background-color: rgba(0,0,0,0.2) !important;
+    -moz-appearance: none !important;
+    background-image: none !important;
+}

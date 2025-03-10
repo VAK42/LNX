@@ -1,0 +1,93 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "width": 1920,
+    "spacing": 2,
+    "modules-left": [
+	"custom/msi",
+	"temperature",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+	"clock"
+    ],
+    "modules-right": [	
+	"cpu",
+	"memory",
+	"disk",
+        "network",
+        "battery"
+    ],
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "一",
+	    "2": "二",
+            "3": "三",
+	    "4": "四",
+	    "5": "五",
+	    "6": "六",
+	    "7": "七",
+	    "8": "八",
+	    "9": "九",
+	    "10": "十"
+        }
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+	"format-time": "{H} H {M} M",
+        "format-full": "{capacity}%  ",
+        "format-charging": "{capacity}%  ",
+        "format-plugged": "{capacity}%  ",
+	"format-good": "{capacity}%  ",
+	"format-warning": "{capacity}% !",
+	"format-critical": "{capacity}% ",
+	"tooltip-format": "{time}"
+    },
+    "cpu": {
+	"interval": 1,
+        "format": "{load} GHz | {usage}%  "
+    },
+    "clock": {
+	"interval": 1,
+	"format": "{:%A | %d %B %Y | %H:%M:%S  }",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>"
+    },
+    "disk": {
+	"format": "{specific_used:0.1f} GB / {specific_total:0.1f} GB | {percentage_used}%  ",
+	"tooltip": false,
+	"unit": "GiB"
+    },
+    "memory": {
+	"interval": 1,
+        "format": "{used:0.1f} GB / {total:0.1f} GB | {percentage}%  ",
+	"tooltip": false
+    },
+    "network": {
+	"interval": 1,
+        "format-wifi": "{bandwidthDownBytes} {essid} {signalStrength}%  ",
+        "format-ethernet": "{bandwidthDownBytes} {ipaddr} / {cidr}  ",
+        "tooltip-format": "{ifname} / {gwaddr}  ",
+        "format-linked": "{ifname} IP  ",
+        "format-disconnected": "!",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "temperature": {
+	"interval": 1,
+	"format": "{temperatureC}°C  ",
+	"format-critical": "{temperatureC}°C  ",
+	"tooltip": false
+    },
+    "custom/msi": {
+	"format": "  MSI Bravo 15 B7ED | R5-7535HS | RX 6550M |---|   Arch Linux |   Hyprland",
+	"tooltip": false
+    }
+}
