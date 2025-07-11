@@ -42,6 +42,7 @@ disabled = false
 style = "sky"
 
 [os.symbols]
+Arch = " 󰣇 - Arch Linux "
 Fedora = "   - Fedora "
 
 [username]
