@@ -42,7 +42,7 @@ disabled = false
 style = "sky"
 
 [os.symbols]
-Arch = " 󰣇 - Arch Linux "
+Fedora = "   - Fedora "
 
 [username]
 show_always = true
